@@ -1,0 +1,28 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    background-color: #f8de3c;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    background-color: #c8472c;
+    list-style-type: none;
+    justify-content: center;
+}
+
+li:hover {
+    background-color: #777;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
