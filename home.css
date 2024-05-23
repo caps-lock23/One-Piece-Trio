@@ -1,12 +1,24 @@
+@font-face {
+    font-family: 'One Piece';
+    src: url('onepiece.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0px;
     padding: 0px;
+}
+
+body {
+    font-family: 'One Piece', Arial, sans-serif; /* Use the custom font in the body */
 }
 
 h1 {
     background-color: #f8de3c;
     display: flex;
     justify-content: center;
+    font-size: 3em;
 }
 
 ul {
@@ -16,6 +28,8 @@ ul {
     background-color: #c8472c;
     list-style-type: none;
     justify-content: center;
+    font-size: 2em;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 li:hover {
