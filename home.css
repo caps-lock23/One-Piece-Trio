@@ -6,28 +6,32 @@
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: 'One Piece', Arial, sans-serif; /* Use the custom font in the body */
+    font-family: 'One Piece', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
-    background-color: #f8de3c;
     display: flex;
     justify-content: center;
-    font-size: 3em;
+    width: 100%;
+    background-color: #f8de3c;
+    font-size: 4em;
 }
 
 ul {
     display: flex;
-    flex-direction: row;
     gap: 1.5em;
     background-color: #c8472c;
-    list-style-type: none;
+    width: 100%;
     justify-content: center;
+    list-style-type: none;
     font-size: 2em;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -39,4 +43,56 @@ li:hover {
 a {
     text-decoration: none;
     color: white;
+}
+
+.card {
+    padding-top: 3em;
+    width: 500px;
+}
+
+/*slider style*/
+body{
+    padding: 0;
+    margin: 0;
+    background-color: floralwhite;
+}
+
+.slider-frame{
+    overflow: hidden;
+    height: 800px;
+    width: 1200px;
+}
+
+/*slide animation*/
+@-webkit-keyframes slide_animation{
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:1200px;}
+    30% {left:1200px;}
+    40% {left:2400px;}
+    50% {left:2400px;}
+    60% {left:1200px;}
+    70% {left:1200px;}
+    80% {left:0px;}
+    90% {left:0px;}
+    100% {left:0px;}
+}
+
+.slide-images{
+    width: 3600px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 33s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+
+.img-container{
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
 }
